@@ -176,9 +176,7 @@ export default {
         } else if (this.activeIndex === (this.len - 1)) {
           this.activeIndex = 1
         }
-
         this.isTransitioning = false // 为false时表示transition过渡结束，可以进行切换轮播
-
       }, this.transitionInterval)
     }
   }
