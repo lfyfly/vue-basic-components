@@ -88,7 +88,7 @@
 
   //- 事件冒泡代理
   ul.dots(@click="activeDotFn")
-    li.dot(v-for="n in (len-2)", :data-dot-index="n",:class="{'active-dot': activeIndex===n||(activeIndex===(len-1)&&n===1)||(activeIndex===0&&n===4)}")
+    li.dot(v-for="n in (len-2)", :data-dot-index="n",:class="{'active-dot': activeIndex===n||(activeIndex===(len-1)&&n===1)||(activeIndex===0&&n===5)}")
 </template>
 
 <!-- ——————————————↓JS—————————分界线———————————————————————— -->
@@ -159,6 +159,7 @@ export default {
   },
   watch: {
     activeIndex(newActiveIndex, oldActiveIndex) {
+      console.log(newActiveIndex, oldActiveIndex)
       // ==5== 监听activeIndex的变化，当activeIndex到达边界的时候进行复位
       // if(是轮播图从最后一张切换到第一张 || 是轮播图从第一张切换到最后一张) 是属于瞬间归位，直接return，不执行以后所有函数
       if ((newActiveIndex === 1 && oldActiveIndex === (this.len - 1)) || (oldActiveIndex === 0 && newActiveIndex === this.len - 2)) {
