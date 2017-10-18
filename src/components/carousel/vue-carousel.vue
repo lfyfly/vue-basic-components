@@ -114,7 +114,7 @@ export default {
       timer: null, // 自动播放的定时器
       isTransitioning: false, // 是否处于过度动画执行期间
       transitionInterval: 500, // 过渡动画时长
-      isResetIndex: false, // 是否为瞬间重置定位，在watch中初始化，从中定位会取消transition动画
+      isResetIndex: false, // 是否为瞬间重置定位，在watch中初始化，重定位会取消transition动画
     }
   },
   computed: {
@@ -170,10 +170,11 @@ export default {
       this.isResetIndex = false
       this.isTransitioning = true // 为true时表示正在进行transition过渡中，不可以进行切换轮播
 
-      setTimeout(() => {// 判断是否在
+      setTimeout(() => {
         // 瞬间归位需要取消transition过渡
+        // 以下两种情况是瞬间归位时activeIndex变化
         if (this.activeIndex === 0) {
-          this.activeIndex = this.len - 2 // 瞬间归位activeIndex变化
+          this.activeIndex = this.len - 2
         } else if (this.activeIndex === (this.len - 1)) {
           this.activeIndex = 1
         }
