@@ -17,8 +17,9 @@ export default {
       tags: [
         { tag: '无缝轮播', to: "/vue-carousel" },
         { tag: '3d轮播', to: "/vue-carousel-3d" },
-        { tag: 'vue消息弹窗插件', to: "/vue-msg" },
-        { tag: '瀑布流组件', to: "/waterfall" }
+        { tag: '消息弹窗插件', to: "/vue-msg" },
+        { tag: '瀑布流组件', to: "/waterfall" },
+        { tag: '图片预加载组件', to: "/preload-image" },
       ]
     }
   }

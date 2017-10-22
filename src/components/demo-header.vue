@@ -3,6 +3,7 @@
 .demo-header {
   white-space: nowrap;
   text-align: center;
+  margin: 10px 0 ;
   &>* {
     display: inline-block;
   }
@@ -30,7 +31,7 @@
 .demo-header
   h3.title {{title}}
   ul.links
-    li: a.link(v-for="link in links",:href="link.href",target="_blank") {{link.name}}
+    li: a.link(v-for="link in links",:href="link.href?link.href:false",target="_blank") {{link.name}}
 
 </template>
 

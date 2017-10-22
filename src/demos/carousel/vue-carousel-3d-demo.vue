@@ -34,9 +34,9 @@ export default {
       msg: 'this is from vue-carousel-3d-demo.vue',
       title: '[ vue组件 ] 无缝轮播图',
       links: [
-        { name: 'github', href: 'https://github.com/lfyfly/vue-basic-components/blob/master/src/components/carousel/vue-carousel.vue' },
-        { name: 'demo', href: 'https://github.com/lfyfly/vue-basic-components/blob/master/src/components/demos/carousel/vue-carousel-demo.vue' },
-        { name: '实现原理', href: 'https://segmentfault.com/a/1190000011584322?_ea=2690954' }
+        { name: 'github', href: 'https://github.com/lfyfly/vue-basic-components/blob/master/src/components/carousel/vue-carousel-3d.vue' },
+        { name: 'demo', href: '' },
+        { name: '实现原理', href: '' }
       ],
       // 轮播图元素组成的数组
       imgs: [

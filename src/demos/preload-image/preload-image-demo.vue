@@ -1,8 +1,8 @@
 <!-- —————————————↓SCSS———————分界线————————————————————————— -->
 <style lang="scss">
-.waterfall-demo {
-    height: 100%;
-    overflow: hidden;
+.preload-image-demo {
+  height: 100%;
+  overflow: hidden;
   iframe {
     width: 100%;
     height: 100%;
@@ -13,8 +13,9 @@
 
 <!-- —————————————↓HTML————————分界线———————————————————————— -->
 <template lang="pug">
-.waterfall-demo
-  iframe.waterfall-iframe(src="http://lfyfly.gitee.io/vue-waterfall-easy/docs/")
+.preload-image-demo
+  iframe.waterfall-iframe(src="http://lfyfly.gitee.io/vue-preload-image/docs/")
+
 </template>
 
 <!-- ——————————————↓JS—————————分界线———————————————————————— -->
@@ -22,15 +23,14 @@
 //import XXX from './components/XXX'
 
 export default {
-  name: 'waterfall-demo',
+  name: 'preload-image-demo',
   data() {
     return {
-      msg: 'this is from waterfall-demo.vue'
+      msg: 'this is from preload-image-demo.vue'
     }
   },
   methods: {
 
-  },
-
+  }
 }
 </script>
