@@ -1,7 +1,8 @@
 <!-- —————————————↓SCSS———————分界线————————————————————————— -->
 <style lang="scss">
 .nav-tag {
-  padding: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
   &>li {
     display: inline-block;
     margin: 5px;
@@ -13,9 +14,14 @@
 
     border: 1px solid;
     white-space: nowrap;
+    color: #a9a9a9;
     border-radius: $raduis;
     font-size: $raduis;
     line-height: $raduis * 2;
+    &:hover{
+      border-color: orange;
+
+    }
     &.router-link-active {
       color: orange;
     }

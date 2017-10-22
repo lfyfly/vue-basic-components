@@ -15,7 +15,9 @@ export default {
   data() {
     return {
       tags: [
-        { tag: '无缝轮播', to: "/vue-carousel" }
+        { tag: '无缝轮播', to: "/vue-carousel" },
+        { tag: '3d轮播', to: "/vue-carousel-3d" },
+        { tag: 'vue弹窗消息插件', to: "/vue-msg" },
       ]
     }
   }

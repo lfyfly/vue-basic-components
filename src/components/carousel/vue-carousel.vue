@@ -1,5 +1,5 @@
 <!-- —————————————↓SCSS———————分界线————————————————————————— -->
-<style lang="scss">
+<style lang="scss" >
 .vue-carousel {
   height: 100%;
   overflow: hidden;
@@ -10,63 +10,63 @@
       display: block;
     }
   }
-}
 
-.imgs-container {
-  height: 100%;
-  .img-item {
-    display: inline-block;
-    width: 100%;
+  .imgs-container {
     height: 100%;
-    background: #ccc no-repeat center/cover;
-  }
-} // 上一张 下一张 按钮
-.prev,
-.next {
-  display: none;
+    .img-item {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      background: #ccc no-repeat center/cover;
+    }
+  } // 上一张 下一张 按钮
+  .prev,
+  .next {
+    display: none;
 
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 
-  width: 44px;
-  font-size: 60px;
+    width: 44px;
+    font-size: 60px;
 
-  cursor: pointer;
-  color: rgba(0, 0, 0, .7);
-  text-align: center;
-  font-weight: 200;
-  line-height: 80px;
-}
-
-.prev {
-  left: 4%;
-}
-
-.next {
-  right: 4%;
-}
-
-// 轮播图地下的小圆点
-.dots {
-  display: table;
-  margin: 0 auto;
-  transform: translateY(-120%);
-  .dot {
-    $width: 12px; // 小圆点直径
-    display: inline-block;
-    box-sizing: border-box;
-    width: $width;
-    height: $width;
-    margin: $width/2;
-    border: 2px solid transparent;
-    border-radius: 50%;
-
-    background: rgba(0, 0, 0, .7);
     cursor: pointer;
+    color: rgba(0, 0, 0, .7);
+    text-align: center;
+    font-weight: 200;
+    line-height: 80px;
+  }
 
-    &.active-dot {
-      border: 2px solid #f84e4e;
+  .prev {
+    left: 4%;
+  }
+
+  .next {
+    right: 4%;
+  }
+
+  // 轮播图地下的小圆点
+  .dots {
+    display: table;
+    margin: 0 auto;
+    transform: translateY(-120%);
+    .dot {
+      $width: 12px; // 小圆点直径
+      display: inline-block;
+      box-sizing: border-box;
+      width: $width;
+      height: $width;
+      margin: $width/2;
+      border: 2px solid transparent;
+      border-radius: 50%;
+
+      background: rgba(0, 0, 0, .7);
+      cursor: pointer;
+
+      &.active-dot {
+        border: 2px solid #f84e4e;
+      }
     }
   }
 }

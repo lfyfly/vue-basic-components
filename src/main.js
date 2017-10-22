@@ -6,6 +6,9 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+import vueMsg from './plugins/vue-msg'
+Vue.use(vueMsg)
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
