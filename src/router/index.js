@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
-import vueCarouselDemo from '@/components/demos/carousel/vue-carousel-demo'
-import vueCarousel3dDemo from '@/components/demos/carousel/vue-carousel-3d-demo'
-import vueMsgDemo from '@/components/demos/vue-msg/vue-msg-demo'
+import vueCarouselDemo from '@/demos/carousel/vue-carousel-demo'
+import vueCarousel3dDemo from '@/demos/carousel/vue-carousel-3d-demo'
+import vueMsgDemo from '@/demos/vue-msg/vue-msg-demo'
+import waterfallDemo from '@/demos/waterfall/waterfall-demo'
 Vue.use(Router)
 
 export default new Router({
@@ -26,6 +27,12 @@ export default new Router({
       path: '/vue-msg',
       name: 'vue-msg-demo',
       component: vueMsgDemo
+    },
+      {
+      path: '/waterfall',
+      name: 'waterfall-demo',
+      component: waterfallDemo
     }
   ]
 })
+// http://lfyfly.gitee.io/vue-waterfall-easy/docs/

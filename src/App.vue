@@ -1,7 +1,7 @@
 <template lang="pug">
 #app
-  nav-tag(:tags="tags")
-  router-view
+  nav-tag#nav(:tags="tags")
+  router-view.router-view
 </template>
 
 <script>
@@ -17,7 +17,8 @@ export default {
       tags: [
         { tag: '无缝轮播', to: "/vue-carousel" },
         { tag: '3d轮播', to: "/vue-carousel-3d" },
-        { tag: 'vue弹窗消息插件', to: "/vue-msg" },
+        { tag: 'vue消息弹窗插件', to: "/vue-msg" },
+        { tag: '瀑布流组件', to: "/waterfall" }
       ]
     }
   }
@@ -30,6 +31,17 @@ export default {
   margin: 0;
   padding: 0;
 }
+html,body,#app{
+  height: 100%;
+}
+#app{
+  display: flex;
+  flex-direction: column;
+  .router-view{
+    flex-grow: 1;
+  }
+}
+
 li{
   list-style-type: none;
 }

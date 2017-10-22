@@ -1,32 +1,25 @@
 <!-- —————————————↓SCSS———————分界线————————————————————————— -->
 <style lang="scss">
-.nav-tag {
-  padding: 4px;
-  border-bottom: 1px solid #ccc;
-  &>li {
+.demo-header {
+  white-space: nowrap;
+  text-align: center;
+  &>* {
     display: inline-block;
-    margin: 5px;
   }
-  .tag {
-    $raduis: 14px;
-    display: inline-block;
-    padding: 0 20px;
-
-    border: 1px solid;
-    white-space: nowrap;
-    color: #a9a9a9;
-    border-radius: $raduis;
-    font-size: $raduis;
-    line-height: $raduis * 2;
-    &:hover{
-      border-color: orange;
-
-    }
-    &.router-link-active {
-      color: orange;
-    }
-    &:hover {
-      text-decoration: underline;
+  .links {
+    margin-left: 10px;
+    .link {
+      background: #ccc;
+      padding: 0 10px;
+      margin: 0 2px;
+      border-radius: 15px;
+      line-height: 22px;
+      display: inline-block;
+      background: #13ce66;
+      color: #fff;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -34,27 +27,23 @@
 
 <!-- —————————————↓HTML————————分界线———————————————————————— -->
 <template lang="pug">
-.nav
-  .nav-tag
-    li(v-for="tag in tags"): router-link.tag(:to="tag.to") {{tag.tag}}
-
+.demo-header
+  h3.title {{title}}
+  ul.links
+    li: a.link(v-for="link in links",:href="link.href",target="_blank") {{link.name}}
 
 </template>
 
 <!-- ——————————————↓JS—————————分界线———————————————————————— -->
 <script>
+//import XXX from './components/XXX'
 
 export default {
-  name: 'nav-tag',
-  props: {
-    tags: {
-      type: Array,
-      required: true
-    }
-  },
+  name: 'demo-header',
+  props: ['title', 'links'],
   data() {
     return {
-      msg: 'this is from nav-tag.vue'
+      msg: 'this is from demo-header.vue'
     }
   },
   methods: {

@@ -49,7 +49,6 @@
 
 <!-- ——————————————↓JS—————————分界线———————————————————————— -->
 <script>
-//import XXX from './components/XXX'
 
 export default {
   name: 'vue-msg-demo',

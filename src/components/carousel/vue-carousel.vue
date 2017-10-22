@@ -1,7 +1,6 @@
 <!-- —————————————↓SCSS———————分界线————————————————————————— -->
 <style lang="scss" >
 .vue-carousel {
-  height: 100%;
   overflow: hidden;
   position: relative;
   &:hover {
