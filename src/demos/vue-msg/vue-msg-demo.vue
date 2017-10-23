@@ -1,10 +1,7 @@
 <!-- —————————————↓SCSS———————分界线————————————————————————— -->
 <style lang="scss">
 .vue-msg-demo {
-  h3 {
-    text-align: center;
-    line-height: 3;
-  }
+
   button {
     cursor: pointer;
     display: block;
@@ -39,7 +36,6 @@
 <!-- —————————————↓HTML————————分界线———————————————————————— -->
 <template lang="pug">
 .vue-msg-demo
-  h3 这是vue消息弹窗插件
   button.succ(@click="succMsgFn") 弹出一个成功的消息
   button.err(@click="errorMsgFn") 弹出一个失败的消息
   button.warn(@click="warnMsgFn") 弹出一个警告的消息

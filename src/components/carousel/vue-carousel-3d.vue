@@ -13,6 +13,9 @@
     height: 100%;
     &>.img-item {
       position: absolute;
+         img{
+        width: 100%;
+      }
     }
     &.to-next {
       .prev {
@@ -86,6 +89,7 @@
   )
   .imgs-container(@click="switchFn",:class="{'to-next':dir==='next'}")
     a.img-item(
+      :style="{width:imgWidth+'px'}",
       v-for="(img,i) in imgs",
       :href="img.href?img.href:false",
       :class="{active:activeIndex===i,prev:activeIndex-1===i||(activeIndex===0&&i===len-1),next:activeIndex+1===i||(activeIndex===len-1&&i===0)}",
@@ -118,7 +122,7 @@ export default {
     },
     interval: { // 自动播放时间间隔
       type: Number,
-      default: 2000
+      default: 6000
     }
   },
   data() {

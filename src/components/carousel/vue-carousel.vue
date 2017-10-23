@@ -17,6 +17,7 @@
       width: 100%;
       height: 100%;
       background: #ccc no-repeat center/cover;
+
     }
   } // 上一张 下一张 按钮
   .prev,

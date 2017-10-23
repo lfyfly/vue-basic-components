@@ -4,9 +4,13 @@
   .vue-carousel-3d {
     margin: 0 auto;
   }
-  h3 {
-    text-align: center;
-    line-height: 2;
+}
+
+.is-mobile {
+  .vue-carousel-3d {
+   .dots{
+     display: none;
+   }
   }
 }
 </style>
@@ -14,37 +18,30 @@
 <!-- —————————————↓HTML————————分界线———————————————————————— -->
 <template lang="pug">
 .vue-carousel-demo-3d
-  demo-header(:title="title",:links="links")
-  vue-carousel-3d(:imgs="imgs",:imgWidth="520",:height="280")
+  //- PC端指定图片的宽度和整个轮播图的高度
+  //- vue-carousel-3d(:imgs="imgs",:imgWidth="520",:height="280")
+  vue-carousel-3d(:imgs="imgs",:imgWidth="$store.state.isMobile?230:520",:height="280")
 </template>
 
 <!-- ——————————————↓JS—————————分界线———————————————————————— -->
 <script>
 import vueCarousel3d from '@/components/carousel/vue-carousel-3d'
-import demoHeader from '@/components/demo-header'
 
 export default {
   name: 'vue-carousel-demo-3d',
   components: {
     vueCarousel3d,
-    demoHeader
   },
   data() {
     return {
       msg: 'this is from vue-carousel-3d-demo.vue',
-      title: '[ vue组件 ] 无缝轮播图',
-      links: [
-        { name: 'github', href: 'https://github.com/lfyfly/vue-basic-components/blob/master/src/components/carousel/vue-carousel-3d.vue' },
-        { name: 'demo', href: '' },
-        { name: '实现原理', href: '' }
-      ],
       // 轮播图元素组成的数组
       imgs: [
-        { src: '/static/carousel-3d-imgs/1.jpg', href: '' },
-        { src: '/static/carousel-3d-imgs/2.jpg', href: '' },
-        { src: '/static/carousel-3d-imgs/3.jpg', href: '' },
-        { src: '/static/carousel-3d-imgs/4.jpg', href: '' },
-        { src: '/static/carousel-3d-imgs/5.jpg', href: '' },
+        { src: './static/carousel-3d-imgs/1.jpg', href: '' },
+        { src: './static/carousel-3d-imgs/2.jpg', href: '' },
+        { src: './static/carousel-3d-imgs/3.jpg', href: '' },
+        { src: './static/carousel-3d-imgs/4.jpg', href: '' },
+        { src: './static/carousel-3d-imgs/5.jpg', href: '' },
       ]
     }
   },

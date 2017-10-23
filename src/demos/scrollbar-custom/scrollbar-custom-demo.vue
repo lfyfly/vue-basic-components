@@ -1,26 +1,28 @@
 <!-- —————————————↓SCSS———————分界线————————————————————————— -->
 <style lang="scss">
-
-.hello{
+.scrollbar-custom-demo {
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow: hidden!important;
 }
-
 </style>
 
 <!-- —————————————↓HTML————————分界线———————————————————————— -->
 <template lang="pug">
-.hello
-  h3 {{msg}}
+.scrollbar-custom-demo
+  iframe(src="http://lfyfly.gitee.io/vue-scrollbar-custom/docs/")
+
 </template>
 
 <!-- ——————————————↓JS—————————分界线———————————————————————— -->
 <script>
-//import XXX from './components/XXX'
+// import XXX from './components/XXX'
 
 export default {
-  name: 'hello',
-  data () {
+  name: 'scrollbar-custom-demo',
+  data() {
     return {
-      msg: 'this is from hello.vue'
+      msg: 'this is from scrollbar-custom-demo.vue'
     }
   },
   methods: {

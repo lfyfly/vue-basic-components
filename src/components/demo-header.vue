@@ -1,9 +1,15 @@
 <!-- —————————————↓SCSS———————分界线————————————————————————— -->
 <style lang="scss">
 .demo-header {
-  white-space: nowrap;
   text-align: center;
-  margin: 10px 0 ;
+  margin: 18px;
+  .demo-logo{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+    background-size: contain;
+  }
   &>* {
     display: inline-block;
   }
@@ -22,6 +28,9 @@
         text-decoration: underline;
       }
     }
+    .unfinished{
+      background: #eee;
+    }
   }
 }
 </style>
@@ -29,9 +38,17 @@
 <!-- —————————————↓HTML————————分界线———————————————————————— -->
 <template lang="pug">
 .demo-header
-  h3.title {{title}}
+  .demo-logo(v-if="data.logo",:style="{'background-image':`url(${data.logo})`}")
+  h3.title {{data.title}}
   ul.links
-    li: a.link(v-for="link in links",:href="link.href?link.href:false",target="_blank") {{link.name}}
+    li
+      a.link(
+        v-if="link.href",
+        v-for="link in data.links",
+        :href="link.href?link.href:false",
+        target="_blank",
+        :class="{unfinished:!link.href}"
+        ) {{link.name}}
 
 </template>
 
@@ -41,7 +58,7 @@
 
 export default {
   name: 'demo-header',
-  props: ['title', 'links'],
+  props: ['data'],
   data() {
     return {
       msg: 'this is from demo-header.vue'

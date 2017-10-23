@@ -6,7 +6,7 @@ let instance
 
 function msg(msg) {
   if (!msg.content) return
-
+  let timeout = msg.timeout
   let defaultMsg = {
     key: Date.now(), // 唯一key
     type: 'succ', // 默认类型
@@ -16,13 +16,12 @@ function msg(msg) {
   msg = Object.assign({}, defaultMsg, msg)
 
   instance.msgs.push(msg)
-
-  let timeout = msg.timeout || 3000
-
+  if (timeout === 0) return
+  timeout = msg.timeout || 3000
   setTimeout(function () {
     instance.msgs.splice(instance.msgs.indexOf(msg), 1)
 
-  }, timeout);
+  }, timeout)
 }
 
 export default {
