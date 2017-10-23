@@ -67,7 +67,7 @@ export default {
         },
         {
           logo: 'static/layout-ptoject/markdown-logo.jpg',
-          title: '[ 响应式端布局 ] 在线markdown编辑器',
+          title: '[ 响应式布局 ] 在线markdown编辑器',
           links: [
             { name: 'github', href: 'https://github.com/lfyfly/fly-markdown' },
             { name: '线上效果', href: 'http://lfyfly.gitee.io/fly-markdown/docs' },
