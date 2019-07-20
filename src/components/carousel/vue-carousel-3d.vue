@@ -206,6 +206,9 @@ export default {
   },
   mounted() {
     this.startInterval() // 启动自动轮播
+  },
+  beforeDestroy(){
+    clearInterval(this.timer)
   }
 }
 </script>

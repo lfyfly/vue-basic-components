@@ -157,6 +157,9 @@ export default {
   mounted() {
     this.startInterval() // 启动自动轮播
   },
+  beforeDestroy(){
+    clearInterval(this.timer)
+  },
   watch: {
     activeIndex(newActiveIndex, oldActiveIndex) {
       console.log(newActiveIndex, oldActiveIndex)
