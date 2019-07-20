@@ -10,7 +10,7 @@
 <!-- —————————————↓HTML————————分界线———————————————————————— -->
 <template lang="pug">
 .drag-demo
-  iframe(src="http://lfyfly.gitee.io/vue-dragdrag/docs")
+  iframe(src="//lfyfly.gitee.io/vue-dragdrag/docs")
 </template>
 
 <!-- ——————————————↓JS—————————分界线———————————————————————— -->

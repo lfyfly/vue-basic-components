@@ -46,7 +46,7 @@ export default {
           title: '[ 移动端布局 ] 手机端豆瓣首页（仿）',
           links: [
             { name: 'github', href: 'https://github.com/lfyfly/douban-mobile' },
-            { name: '线上效果', href: 'http://lfyfly.gitee.io/douban-mobile/docs/' },
+            { name: '线上效果', href: '//lfyfly.gitee.io/douban-mobile/docs/' },
           ]
         },
         {
@@ -54,7 +54,7 @@ export default {
           title: '[ 响应式布局 ] 印象笔记官网（仿）',
           links: [
             { name: 'github', href: 'https://github.com/lfyfly/yinxiang-response' },
-            { name: '线上效果', href: 'http://lfyfly.gitee.io/yinxiang-response/docs/' },
+            { name: '线上效果', href: '//lfyfly.gitee.io/yinxiang-response/docs/' },
           ]
         },
         {
@@ -62,7 +62,7 @@ export default {
           title: '[ PC端布局 ] dota2官网首页（仿）',
           links: [
             { name: 'github', href: 'https://github.com/lfyfly/dota2-home-page' },
-            { name: '线上效果', href: 'http://lfyfly.gitee.io/dota2-home-page/docs/' },
+            { name: '线上效果', href: '//lfyfly.gitee.io/dota2-home-page/docs/' },
           ]
         },
         {
@@ -70,7 +70,7 @@ export default {
           title: '[ 响应式布局 ] 在线markdown编辑器',
           links: [
             { name: 'github', href: 'https://github.com/lfyfly/fly-markdown' },
-            { name: '线上效果', href: 'http://lfyfly.gitee.io/fly-markdown/docs' },
+            { name: '线上效果', href: '//lfyfly.gitee.io/fly-markdown/docs' },
             { name: '文档', href: 'https://github.com/lfyfly/fly-markdown/blob/master/README.md' }
           ]
         },

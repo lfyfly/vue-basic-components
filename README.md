@@ -3,4 +3,4 @@
 
 **(๑•̀ㅂ•́)و✧不定时更新，欢迎 star，讨论，指教。**
 
-# [在线demo展示](http://lfyfly.gitee.io/vue-basic-components/live-demos/#/vue-carousel)
+# [在线demo展示](//lfyfly.gitee.io/vue-basic-components/live-demos/#/vue-carousel)

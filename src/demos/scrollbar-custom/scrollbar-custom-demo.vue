@@ -10,7 +10,7 @@
 <!-- —————————————↓HTML————————分界线———————————————————————— -->
 <template lang="pug">
 .scrollbar-custom-demo
-  iframe(src="http://lfyfly.gitee.io/vue-scrollbar-custom/docs/")
+  iframe(src="//lfyfly.gitee.io/vue-scrollbar-custom/docs/")
 
 </template>
 

@@ -10,7 +10,7 @@
     template(scope="props")
       p.some-info 第{{props.index+1}}张图片
       p.some-info {{props.value.info}}
-  //- iframe.waterfall-iframe(src="http://lfyfly.gitee.io/vue-waterfall-easy/docs/")
+  //- iframe.waterfall-iframe(src="//lfyfly.gitee.io/vue-waterfall-easy/docs/")
 </template>
 
 <!-- ——————————————↓JS—————————分界线———————————————————————— -->

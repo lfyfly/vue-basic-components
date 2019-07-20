@@ -10,7 +10,7 @@
 <!-- —————————————↓HTML————————分界线———————————————————————— -->
 <template lang="pug">
 .preload-image-demo
-  iframe.waterfall-iframe(src="http://lfyfly.gitee.io/vue-preload-image/docs/")
+  iframe.waterfall-iframe(src="//lfyfly.gitee.io/vue-preload-image/docs/")
 
 </template>
 
